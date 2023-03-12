@@ -38,7 +38,7 @@ window.onload = function() {
 
         if (gameOver) {
             clearInterval(loop);
-            mario.src='/img/game-over.png';
+            mario.src='img/game-over.png';
             mario.style.width = '55px';
             mario.style.marginLeft='50px';
         }
