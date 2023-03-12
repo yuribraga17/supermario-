@@ -1,0 +1,142 @@
+* {
+	box-sizing: border-box;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #70c7ff;
+}
+  
+header {
+	text-align: center;
+	background-color: #FEE101;
+	padding: 20px;
+}
+  
+h1 {
+	margin: 0;
+}
+  
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+  }
+  
+  
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.game-board{
+    width: 99%;
+    height: 500px;
+    border-bottom: 15px solid #007A04;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgb(67, 148, 255),#87ceeb,#e0f6ff);
+}
+.pipe{
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    
+    animation:pipe-animation 1.5s infinite linear;
+}
+
+.mario{
+    width: 110px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.jump{
+    animation: jump 500ms ease-out;
+}
+
+@keyframes pipe-animation{
+    from{ right: -80px;}
+
+to{right: 100%;}
+}
+
+@keyframes jump{
+   0%{bottom: 0;}
+
+   40%{bottom: 180px;}
+
+   50%{bottom: 180px;}
+
+   60%{bottom: 180px;}
+
+   100%{bottom: 0%;}
+}
+
+.clouds{
+    width: 500px;
+    margin-top:80px;
+    position: absolute;
+    animation:clouds-animation 20s infinite linear;
+}
+
+
+@keyframes clouds-animation {
+    from {
+        right: -500px;
+        opacity: 0;
+    }
+    to {
+        right: 100%;
+        opacity: 1;
+    }
+}
+
+.score {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	font-size: 24px;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+	text-shadow: 2px 2px rgb(255, 255, 255);
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+nav a {
+	color: rgb(5, 5, 5);
+	text-decoration: none;
+	font-size: 18px;
+}
+
+nav a:hover {
+	color: #000;
+	text-shadow: none;
+}
+footer {
+	color: rgb(0, 0, 0);
+	padding: 20px;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+	font-size: 18px;
+    padding: -50%;
+
+}
+ 
